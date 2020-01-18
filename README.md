@@ -4,9 +4,9 @@ First of all to run this project you should have docker installed on your host t
 Also you can commit the docker images and use in your kubernetes. 
 
 # Goal
-The goal of this project is to make a simple cload with one api, one client and a loadbalancer and after all we are going to monitor the loadbalancer with NetData.
+The goal of this project is to make a simple cloud with one api, one client and a loadbalancer and after all we are going to monitor the loadbalancer with NetData.
 
-## This project has 2 parts:
+**This project has 2 parts:**
 
 ## API:
 
