@@ -4,6 +4,7 @@ RUN mkdir /var/project/client
 RUN apt update
 RUN apt install -y python3
 RUN apt install -y curl
+RUN apt install -y ssh
 RUN curl -o ./get-pip.py https://bootstrap.pypa.io/get-pip.py 
 RUN apt install -y python3-distutils 
 RUN python3 ./get-pip.py

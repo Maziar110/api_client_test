@@ -3,6 +3,7 @@ RUN mkdir /var/project/
 RUN mkdir /var/project/api
 RUN apt update
 RUN apt install -y python3
+RUN apt install -y ssh
 RUN apt install -y curl
 RUN curl -o ./get-pip.py https://bootstrap.pypa.io/get-pip.py 
 RUN apt install -y python3-distutils 
