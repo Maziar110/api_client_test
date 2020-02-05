@@ -1,12 +1,13 @@
 FROM debian:latest
+LABEL maintainer="maziar.sh110@gmail.com"
 RUN mkdir /var/project/
 RUN mkdir /var/project/client
 RUN apt update
-RUN apt install -y python3
-RUN apt install -y curl
-RUN apt install -y ssh
+RUN apt-get install -y python3
+RUN apt-get install -y curl
+RUN apt-get install -y ssh
 RUN curl -o ./get-pip.py https://bootstrap.pypa.io/get-pip.py 
-RUN apt install -y python3-distutils 
+RUN apt-get install -y python3-distutils 
 RUN python3 ./get-pip.py
 COPY ./rqst_sender.py /var/project/client
 COPY ./requirements.txt .

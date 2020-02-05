@@ -30,5 +30,11 @@ def get_header():
     return "it is what it is"
 
 
+@app.route('/test')
+def test():
+    print("This is a test method")
+    return ('Yooohooo, you\'re connected to backend')
+
+
 if __name__ == '__main__':
-    app.run(host='localhost', port=5001, debug=False)
+    app.run(host='0.0.0.0', debug=False)
