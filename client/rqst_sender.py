@@ -34,7 +34,7 @@ def url_creator():
 
 # Run
 while 1:
-    time.sleep(1)
+    time.sleep(15)
     print(datetime.datetime.now())
     url = url_creator()
     body = req_creator()
