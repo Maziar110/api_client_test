@@ -22,7 +22,8 @@ since the urls are different, some of them are going to fail and by that we can 
 ## How to Run:
 run the bash script in the project ;) yeah this easy :)
 
-![Project review](https://raw.github.com/Maziar110/api_client_test/project.jpg)
+![Project review](./project.jpg)
+
 if you had any question, we can be in touch via:
 
 [maziar.sh110@gmail.com](mailto:maziar.sh110@gmail.com)
