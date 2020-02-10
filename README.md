@@ -20,7 +20,7 @@ Constantly sends requests to the api with different bodies and different URLs in
 since the urls are different, some of them are going to fail and by that we can have our nginx error log for furthur actions.
 
 ## How to Run:
-run the bash script in the project ;) yeah this easy :)
+run the bash script in the project(**Fire.sh**) ;) yeah this easy :)
 
 ![Project review](./project.jpg)
 
