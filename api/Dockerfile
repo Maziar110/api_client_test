@@ -13,7 +13,7 @@ COPY ./rqst_getter.py /var/project/api/
 COPY ./requirements.txt .
 RUN pip3 install -r ./requirements.txt
 EXPOSE 5000
-EXPOSE 22
+EXPOSE 201
 ENV FLASK_APP='/var/project/api/rqst_getter.py'
 CMD flask run --host=0.0.0.0
 #to build this docker image run: "docker build -t <name:version> ." and then you can run this image with: "docker run <name:version>"

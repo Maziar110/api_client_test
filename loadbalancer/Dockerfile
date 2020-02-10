@@ -12,4 +12,4 @@ RUN mkdir /var/log/nginx/api/
 #ENV API_IP='172.2.1.2:5000'
 CMD bash ./configuration.sh
 EXPOSE 8080
-EXPOSE 22
+EXPOSE 203
