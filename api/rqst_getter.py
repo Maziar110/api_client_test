@@ -1,6 +1,21 @@
+#!/usr/bin/env python3
 from flask import Flask, request
 from datetime import datetime
+from flask_opentracing import FlaskTracing
+from jaeger_client import Config
+
+
 app = Flask(__name__)
+config = Config(config=
+{
+    'sampler': {'type': 'const', 'param': 1},
+    'local_agent':
+    {'reporting_host': '172.2.1.5'}
+},
+    service_name='api_rst_getter'
+)
+jaeger_tracer = config.initialize_tracer()
+tracing = FlaskTracing(jaeger_tracer, True, app)
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -33,8 +48,10 @@ def get_header():
 @app.route('/test')
 def test():
     print("This is a test method")
-    return ('Yooohooo, you\'re connected to backend')
+    return ('Yooohooo, you\'re connected to backend\nv2')
 
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=False)
+
+
